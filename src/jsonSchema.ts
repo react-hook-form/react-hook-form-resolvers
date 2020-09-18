@@ -1,4 +1,4 @@
-import * as Ajv from 'ajv';
+import Ajv from 'ajv';
 import { appendErrors, Resolver, transformToNestObject } from 'react-hook-form';
 import type { ErrorObject, Options, ValidateFunction } from 'ajv';
 import type { JSONSchema4, JSONSchema6, JSONSchema7 } from 'json-schema';
@@ -9,7 +9,7 @@ import type {
   ResolverSuccess,
 } from 'react-hook-form/dist/types/form';
 
-type JSONSchema = JSONSchema4 | JSONSchema6 | JSONSchema7;
+export type JSONSchema = JSONSchema4 | JSONSchema6 | JSONSchema7;
 
 const parseErrorSchema = <TFieldValues extends Record<string, any>>(
   validationError: Array<ErrorObject> | null | undefined,

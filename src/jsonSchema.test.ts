@@ -1,7 +1,4 @@
-import { jsonSchemaResolver } from './jsonSchema';
-import { JSONSchema4, JSONSchema6, JSONSchema7 } from 'json-schema';
-
-type JSONSchema = JSONSchema4 | JSONSchema6 | JSONSchema7;
+import { JSONSchema, jsonSchemaResolver } from './jsonSchema';
 
 const schema: JSONSchema = {
   type: 'object',
