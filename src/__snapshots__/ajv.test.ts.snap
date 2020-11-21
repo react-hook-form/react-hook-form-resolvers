@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ajvResolver using Ajv.compile should get errors for array fields 1`] = `
+Object {
+  "errors": Object {
+    "hobbies[0].description": Object {
+      "message": "should NOT be shorter than 3 characters",
+      "params": Object {
+        "limit": 3,
+      },
+    },
+  },
+  "values": Object {},
+}
+`;
+
+exports[`ajvResolver using Ajv.compile should get errors for top level properties 1`] = `
+Object {
+  "errors": Object {
+    "age": Object {
+      "message": "should be integer",
+      "params": Object {
+        "type": "integer",
+      },
+    },
+    "email": Object {
+      "message": "should match format \\"email\\"",
+      "params": Object {
+        "format": "email",
+      },
+    },
+    "name": Object {
+      "message": "should NOT be shorter than 3 characters",
+      "params": Object {
+        "limit": 3,
+      },
+    },
+  },
+  "values": Object {},
+}
+`;
+
+exports[`ajvResolver using Ajv.validate should get errors for array fields 1`] = `
+Object {
+  "errors": Object {
+    "hobbies[0].description": Object {
+      "message": "should NOT be shorter than 3 characters",
+      "params": Object {
+        "limit": 3,
+      },
+    },
+  },
+  "values": Object {},
+}
+`;
+
+exports[`ajvResolver using Ajv.validate should get errors for top level properties 1`] = `
+Object {
+  "errors": Object {
+    "age": Object {
+      "message": "should be integer",
+      "params": Object {
+        "type": "integer",
+      },
+    },
+    "email": Object {
+      "message": "should match format \\"email\\"",
+      "params": Object {
+        "format": "email",
+      },
+    },
+    "name": Object {
+      "message": "should NOT be shorter than 3 characters",
+      "params": Object {
+        "limit": 3,
+      },
+    },
+  },
+  "values": Object {},
+}
+`;
