@@ -20,6 +20,10 @@
 
     $ npm install @hookform/resolvers
 
+## Links
+
+- [React-hook-form validation resolver documentation ](https://react-hook-form.com/api/useform/#validationResolver)
+
 ## API
 
 `resolver(schema: object, schemaOptions?: object, resolverOptions: { mode: 'async' | 'sync' })`
